@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#tellWhoseTurn {
+    font-size: 1.75rem;
+    font-weight: 550;
+    color: white;
+    background-color: rgb(96, 95, 95);
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 10px;
+
+}
+
+.labels {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25%;
+}
+
+#rock,
+#paper,
+#scissor {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.images {
+    margin: 10px 20px;
+    margin-top: 4vh;
+    width: 24vw;
+    height: auto;
+    border-radius: 5%;
+    /* yaa joo neechay wali property haa iss kaa akmm hotaa haa objest ko uss height orr width ma adjust karna */
+    object-fit: cover;
+    /* outline: none; */
+    border: 1px solid rgb(39, 38, 38);
+    transition: 0.2s ease-in-out;
+}
+
+.images:hover {
+    border: 3px solid rgb(39, 38, 38);
+    cursor: pointer;
+
+}
+
+#message {
+    background-color: rgb(96, 95, 95);
+    color: white;
+    font-size: 2rem;
+    padding: 1vw;
+    margin-top: 0;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.scorePresenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+}
+
+#compInformation,
+#userInformation,
+#compInformation p:nth-child(2),
+#userInformation p:nth-child(2) {
+    margin: 3vh 0vw;
+    font-size: 1.5rem;
+}
+
+#compScore,
+#userScore {
+    margin: 0;
+}
+
+#compInformation p:nth-child(2),
+#userInformation p:nth-child(2) {
+    margin: 0%;
+    margin-bottom: 10px;
+}
+
+@media (max-width:450px) {
+    .images {
+        margin-top: 4vh;
+        margin: 10px 7px;
+        width: 28vw;
+        height: auto;
+        border-radius: 5%;
+    }
+
+    .images:hover {
+        border: 2px solid rgb(39, 38, 38);
+    }
+
+    #compInformation,
+    #userInformation,
+    #compInformation p:nth-child(2),
+    #userInformation p:nth-child(2),
+    #rock,
+    #paper,
+    #scissor {
+        font-size: 1.2rem;
+        font-weight: 550;
+
+    }
+
+    #compInformation,
+    #userInformation {
+        margin:3vh 5vw;
+    }
+
+    #message {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        padding: 10px 60px;
+
+    }
+#compScore,
+#userScore {
+    margin:5px;
+}
+    #tellWhoseTurn {
+        font-size: 1.5rem;
+        padding: 10px 60px;
+        margin-bottom: 10px;
+
+    }
+    .labels{
+        margin-bottom: 7px;
+    }
+}
