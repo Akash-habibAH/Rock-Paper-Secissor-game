@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Rock Paper Scissor Battle</h1>
+        <div id="tellWhoseTurn" aria-label="tellWhoseTurn" aria-live="polite"  tabindex="0">Your's Turn</div>
+        <section>
+            <section class="labels">
+                <p id="rock">Rock</p>
+                <p id="paper">Paper</p>
+                <p id="scissor">Scissor</p>
+            </section>
+            <section class="imageContainer">
+                <img class="images" src="/Rock-Paper-Secissor-game/images/rock.jpg" alt="Rock image!" role="button" tabindex="0" >
+                <img class="images" src="/Rock-Paper-Secissor-game/images/paper.jpg" alt="Paper image!" role="button" tabindex="0">
+                <img class="images" src="/Rock-Paper-Secissor-game/images/scissor.jpg" alt="scissor image!" role="button" tabindex="0">
+            </section>
+        </section>
+        <section>
+            <div class="scorePresenter">
+                <div id="userInformation">
+                    <p id="userScore" tabindex="0" aria-label="Your score" aria-labelledby="user">0</p>
+                    <p role="definition" id="user">YOUR SCORE</p>
+                </div>
+                <div id="compInformation">
+                    <p id="compScore" tabindex="0" aria-labelledby="comp">0</p>
+                    <p role="definition" id="comp">COMP SCORE</p>
+                </div>
+            </div>
+            <p id="message">Result will display here!</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
