@@ -9,25 +9,20 @@
 <body>
     <main>
         <h1>Rock Paper Scissor Battle</h1>
-        <div id="tellWhoseTurn" aria-label="tellWhoseTurn" aria-live="polite" tabindex="0">Your's Turn</div>
-        <section>
-            <section class="imageContainer">
-                <button id="rockButton" disabled="false">
-                     <p id="rock">Rock</p>
-                    <img class="images" src="/Rock-Paper-Secissor-game/images/rock.jpg" alt="Image representing rock"
-                       >
-                </button>
-                <button id="paperButton" disabled="false">
-                     <p id="paper">Paper</p>
-                    <img class="images" src="/Rock-Paper-Secissor-game/images/paper.jpg" alt="Image representing paper"
-                       >
-                </button>
-                <button id="scissorButton" disabled="false">
-                    <p id="scissor">Scissor</p>
-                    <img class="images" src="/Rock-Paper-Secissor-game/images/scissor.jpg"
-                        alt="Image representing scissor">
-                </button>
-            </section>
+        <p id="tellWhoseTurn" aria-live="polite">Your's Turn</p>
+        <section class="imageContainer">
+            <button disabled>
+                <p id="rock">Rock</p>
+                <img class="images" id="rockImage" src="/Rock-Paper-Secissor-game/images/rock.jpg" alt="Image representing rock">
+            </button>
+            <button  disabled>
+                <p id="paper">Paper</p>
+                <img class="images" id="paperImage" src="/Rock-Paper-Secissor-game/images/paper.jpg" alt="Image representing paper">
+            </button>
+            <button disabled>
+                <p id="scissor">Scissor</p>
+                <img class="images" id="scissorImage" src="/Rock-Paper-Secissor-game/images/scissor.jpg" alt="Image representing scissor">
+            </button>
         </section>
         <section>
             <div class="scorePresenter">
@@ -40,9 +35,10 @@
                     <p id="comp">COMP SCORE</p>
                 </div>
             </div>
-            <p id="resultMessege">Result will display here!</p>
+            <p id="resultMessege" aria-live="polite">Winner is ?</p>
         </section>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
