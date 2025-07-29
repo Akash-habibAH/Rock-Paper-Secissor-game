@@ -9,25 +9,27 @@
 </head>
 <body>
     <main>
+        <img src="images/icon-close.svg" alt="icon for exit" tabindex="0" id="crossIcon" title="exit button">
         <div class="wrapper">
             <div class="heading">
                 <img src="images/logo.svg" alt="logo of game">
                 <div class="scoreContainer">
                     <p>SCORE</p>
-                    <p class="score">0</p>
+                    <p class="score" tabindex="0" aria-label="yourn s">0</p>
                 </div>
             </div>
             <section>
                 <div class="clickableImages">
-                    <img src="images/icon-paper.svg" alt="icon of paper">
-                    <img src="images/icon-rock.svg" alt="icon of rock">
-                    <img src="images/icon-scissors.svg" alt="icon of secissor">
+                    <img src="images/icon-paper.svg" tabindex="0" alt="icon of paper">
+                    <img src="images/icon-rock.svg" tabindex="0" alt="icon of rock">
+                    <img src="images/icon-scissors.svg" tabindex="0" alt="icon of secissor">
                 </div>
-                <img src="images/bg-triangle.svg" alt="">
+                <img src="images/bg-triangle.svg" alt="" id="triangle">
             </section>
         </div>
         <button class="rulesButton">RULES</button>
     </main>
     <script src="rsp.js"></script>
 </body>
+
 </html>
