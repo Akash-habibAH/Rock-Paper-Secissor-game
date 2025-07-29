@@ -3,42 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper scissor Game</title>
     <link rel="stylesheet" href="style.css">
+    <title>rock Paper Secissor Battle</title>
 </head>
 <body>
+    <h1>SELECT GAME</h1>
     <main>
-        <h1>Rock Paper Scissor Battle</h1>
-        <p id="tellWhoseTurn" aria-live="polite">Your's Turn</p>
-        <section class="imageContainer">
-            <button disabled>
-                <p id="rock">Rock</p>
-                <img class="images" id="rockImage" src="/Rock-Paper-Secissor-game/images/rock.jpg" alt="Image representing rock">
-            </button>
-            <button  disabled>
-                <p id="paper">Paper</p>
-                <img class="images" id="paperImage" src="/Rock-Paper-Secissor-game/images/paper.jpg" alt="Image representing paper">
-            </button>
-            <button disabled>
-                <p id="scissor">Scissor</p>
-                <img class="images" id="scissorImage" src="/Rock-Paper-Secissor-game/images/scissor.jpg" alt="Image representing scissor">
-            </button>
+        <section class="RSP">
+           <img src="images/image-rules.svg" alt="" class="rsp" onclick="displayRSP">
+            <p>Rock Paper Secissor</p>
         </section>
-        <section>
-            <div class="scorePresenter">
-                <div id="userInformation">
-                    <p id="userScore" tabindex="0" aria-labelledby="user">0</p>
-                    <p id="user">YOUR SCORE</p>
-                </div>
-                <div id="compInformation">
-                    <p id="compScore" tabindex="0" aria-labelledby="comp">0</p>
-                    <p id="comp">COMP SCORE</p>
-                </div>
-            </div>
-            <p id="resultMessege" aria-live="polite">Winner is ?</p>
+        <section class="RSPSL">
+           <img src="images/image-rules-bonus.svg" alt="" class="rspsl" onclick="displayRSPSL">
+            <p>RSP Bonus Version</p>
         </section>
     </main>
     <script src="script.js"></script>
 </body>
-
 </html>
