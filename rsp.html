@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,52 @@
     <title>Rock Paper scissor Game</title>
     <link rel="stylesheet" href="rsp.css">
 </head>
+
 <body>
     <main>
-        <img src="images/icon-close.svg" alt="icon for exit" tabindex="0" id="crossIcon" title="exit button">
-        <div class="wrapper">
-            <div class="heading">
-                <img src="images/logo.svg" alt="logo of game">
-                <div class="scoreContainer">
-                    <p>SCORE</p>
-                    <p class="score" tabindex="0" aria-label="yourn s">0</p>
+        <section class="displayHome">
+            <a href="index.html" target="_blank">
+                <img src="images/icon-close.svg" alt="icon for exit" tabindex="0" id="crossIcon" title="exit button">
+            </a>
+            <div class="wrapper">
+                <div class="heading">
+                    <img src="images/logo.svg" alt="logo of game">
+                    <div class="scoreContainer">
+                        <p>SCORE</p>
+                        <p class="score" tabindex="0" aria-label="your score">0</p>
+                    </div>
                 </div>
+                <section>
+                    <div class="clickableImages">
+                        <img src="images/icon-paper.svg" tabindex="0" alt="icon of paper" id="paperImage"
+                            class="images">
+                        <img src="images/icon-rock.svg" tabindex="0" alt="icon of rock" id="rockImage" class="images">
+                        <img src="images/icon-scissors.svg" tabindex="0" alt="icon of scissors" id="scissorsImage"
+                            class="images">
+                    </div>
+                    <img src="images/bg-triangle.svg" alt="" id="triangle">
+                </section>
             </div>
-            <section>
-                <div class="clickableImages">
-                    <img src="images/icon-paper.svg" tabindex="0" alt="icon of paper">
-                    <img src="images/icon-rock.svg" tabindex="0" alt="icon of rock">
-                    <img src="images/icon-scissors.svg" tabindex="0" alt="icon of secissor">
-                </div>
-                <img src="images/bg-triangle.svg" alt="" id="triangle">
-            </section>
+            <button class="rulesButton">RULES</button>
+        </section>
+        <div class="scrollUpInitial">
+            <p class="scrollUpMessage">SWIPE UP</p>
+            <img src="images/scroll-up.png" alt="icon of scroll up">
         </div>
-        <button class="rulesButton">RULES</button>
+        <section class="gameProcedure">
+            <div class="user">
+                <p>YOU PICKED</p>
+                <img src="" alt="this is a image you picked" id="usersImage">
+            </div>
+            <div class="resultSection">
+                <p id="resultMessage">WHO WON</p>
+                <button class="playAgain">PLAY AGAIN</button>
+            </div>
+            <div class="comp">
+                <p>THE HOUSE PICKED</p>
+                <img src="" alt="this is a image which computer picked" id="compsImage">
+            </div>
+        </section>
     </main>
     <script src="rsp.js"></script>
 </body>
