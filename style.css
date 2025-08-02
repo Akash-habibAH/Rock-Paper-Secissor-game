@@ -2,9 +2,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #203757;
     background: radial-gradient(at right center, #203757, #141639);
     width: 100vw;
+}
+a{
+    text-decoration: none;
+    margin: 0;
 }
 
 main {
@@ -16,6 +19,7 @@ main {
     text-align: center;
     gap: 20%;
     margin: 4rem;
+    margin-top: -2rem;
 }
 main section:nth-of-type(1){
     margin-top: 3.5rem;
@@ -30,6 +34,12 @@ p {
     font-size: 2rem;
     margin: 2.5rem auto;
     color:  hsl(218, 22%, 64%);
+}
+.RSP p{
+    margin-bottom: 0;
+}
+.RSP img{
+    width: 20rem;
 }
 section:hover{
     cursor: pointer;
