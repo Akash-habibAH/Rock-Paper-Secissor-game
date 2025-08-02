@@ -15,6 +15,10 @@ main {
     padding-top: 0;
 }
 
+.displayHome {
+    padding: 2.5vw;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -30,8 +34,10 @@ main {
     border-radius: 0.3rem;
     transform: translateY(100%);
     display: inline-block;
+    background: white;
 }
-#crossIcon:hover{
+
+#crossIcon:hover {
     cursor: help;
 }
 
@@ -57,7 +63,7 @@ main {
 
 .scoreContainer p:nth-of-type(1) {
     margin: 0;
-    color: hsl(229, 25%, 31%);
+    color: hsl(229, 64%, 46%);
 }
 
 .score {
@@ -67,7 +73,11 @@ main {
     text-align: center;
 }
 
-.clickableImages img {
+section {
+    margin-top: -1rem;
+}
+
+.images {
     background: white;
     padding: 1.5rem;
     height: 4.5rem;
@@ -76,19 +86,13 @@ main {
     margin: 0rem;
 }
 
-.clickableImages img:nth-of-type(1) {
-    transform: translate(0%, 55%);
-
-}
-
 .clickableImages img:nth-of-type(2) {
     transform: translateY(250%);
-
 }
 
-.clickableImages img:nth-of-type(3) {
+.clickableImages img:nth-of-type(3),
+.clickableImages img:nth-of-type(1) {
     transform: translate(0%, 55%);
-
 }
 
 #triangle {
@@ -103,11 +107,12 @@ main {
     color: white;
     padding: 0.5rem 1.25rem;
     border-radius: 0.3rem;
-    /* transform: translateX(100%); */
     margin-bottom: 1.25rem;
 }
 
-.rulesButton:hover {
+.rulesButton:hover,
+.clickableImages img:hover,
+.playAgain:hover {
     cursor: pointer;
 }
 
@@ -115,4 +120,80 @@ main {
     transform: translate(50%, -50%);
     z-index: 1000;
     background: white;
+}
+
+.scrollUpInitial {
+    display: none;
+}
+
+.scrollUp {
+    display: block;
+    filter: opacity(0.7);
+    border-radius: 0.5rem;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.scrollUpMessage {
+    color: white;
+    font-size: 2rem;
+}
+
+.scrollUp img {
+    width: 50%;
+    opacity: 0.3;
+}
+
+.bluredTop {
+    filter: blur(1.5rem);
+}
+
+.gameProcedure {
+    display: none;
+}
+
+.flexedGameProcedure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 20%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.comp p,
+.user p {
+    color: white;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.resultSection {
+    margin-top: 2rem;
+}
+
+#resultMessage {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.playAgain {
+    background-color: white;
+    color: hsl(217, 16%, 45%);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.75rem 2.5rem;
+}
+
+.rulesImg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
