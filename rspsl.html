@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rsp.css">
+  <link rel="stylesheet" href="rspsl.css">
+  <title>RSP Bonus Version</title>
+</head>
+
+<body>
+  <main>
+    <section class="displayHome">
+      <a href="index.html" target="_blank">
+        <img src="images/icon-close.svg" alt="icon for exit" tabindex="0" id="crossIcon" title="exit button">
+      </a>
+      <div class="wrapper">
+        <div class="heading">
+          <img src="images/logo-bonus.svg" alt="logo of game">
+          <div class="scoreContainer">
+            <p>SCORE</p>
+            <p class="score" tabindex="0" aria-label="yourn s">0</p>
+          </div>
+        </div>
+        <section>
+          <div class="clickableImages">
+            <img src="images/icon-paper.svg" tabindex="0" alt="icon of paper" id="paperImage" class="images">
+            <img src="images/icon-rock.svg" tabindex="0" alt="icon of rock" id="rockImage" class="images">
+            <img src="images/icon-scissors.svg" tabindex="0" alt="icon of scissors" id="scissorsImage" class="images">
+            <img src="images/icon-spock.svg" tabindex="0" alt="image of spock" class="images" id="spockImage">
+            <img src="images/icon-lizard.svg" tabindex="0" alt="image of lizard" class="images" id="lizardImage">
+          </div>
+
+          <img src="images/bg-pentagon.svg" alt="" id="pentagon">
+        </section>
+      </div>
+      <button class="rulesButton">RULES</button>
+    </section> 
+    <div class="scrollUpInitial">
+      <p class="scrollUpMessage">SWIPE UP</p>
+      <img src="images/scroll-up.png" alt="icon of scroll up">
+    </div>
+    <section class="gameProcedure">
+      <div class="user">
+        <p>YOU PICKED</p>
+        <img src="" alt="this is a image you picked" id="usersImage">
+      </div>
+      <div class="resultSection">
+        <p id="resultMessage">WHO WON</p>
+        <button class="playAgain">PLAY AGAIN</button>
+      </div>
+      <div class="comp">
+        <p>THE HOUSE PICKED</p>
+        <img src="" alt="this is a image which computer picked" id="compsImage">
+      </div>
+    </section>
+    <div class="rules">
+      <img src="images/icon-close.svg" alt="" id="removeRules">
+      <img src="images/image-rules-bonus.svg" alt=" rules for bonus version">
+    </div>
+  </main>
+  <script src="rspsl.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
