@@ -1,3 +1,5 @@
+lizard.addEventListener("click", () => handleUserChoice("lizard"));
+spock.addEventListener("click", () => handleUserChoice("spock"));
 function checkWinner() {
   if (userChoice === compChoice) {
     winner = "";
